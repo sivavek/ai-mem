@@ -69,6 +69,26 @@ Current state:
 4. Align the prior-year incident review with the teammate selected by the service manager and obtain the promised access/walkthrough.
 5. Continue filling the service inventory with current evidence for architecture, repositories, pipelines, environments, deployment/version/rollback, runbooks, monitoring/on-call, contacts, documentation, incident learning, and open questions/owners.
 
+## Additional context (synced from Claude project memory, 2026-11-16)
+
+**Program shape:** about 2 months at roughly 75–85% time, with a one-month checkpoint with an SRE architect, an end checkpoint, then knowledge transition. The goal is toil reduction and reliability, not added dev capacity.
+
+**Not assigned unless the service manager confirms:** day-0 onboarding work, government/federal promotion help, a security list the manager is compiling, a demo proxy, dashboards built from existing logging data, and a missing-region alert for monitoring agents.
+
+**Commitments from the 12 Nov stand-up:** the service manager will give runbook feedback (herself or via the team) by Tue 17 Nov and identify a toil area for me.
+
+**More service understanding (from docs and recordings; verify before operational use):**
+
+- The dashboard service is treated as P0. It owns the dashboard experience, BFG, the design system/CSS layer, onboarding, and the microapp hosting framework (assets in object storage, served via CDN).
+- A web entry point bootstraps the shell. SCC uses a separate remote-frame entry, which has module-federation differences. A manifest drives routes and menus, and RBAC affects menu and route generation.
+- The network-experience side includes a UI microapp, a Go proxy service behind the API gateway/load balancer/containers, an AI assistant, and infrastructure running network-monitoring agents. Moving that infrastructure onto the dashboard platform is a work-in-progress proposal, not a decision.
+- Environments include commercial, a regional sovereign deployment, and several government levels. App presence is not uniform across them. The SCC integration version setting affects all integration orgs.
+- The evidence incident showed a detection gap: the shell loaded and shell-level synthetics did not fire, so the route failure was detected days later. It was mitigated by pinning an older version and rolling back.
+- Known documentation conflicts to resolve with owners: proxy GA status, whether an auth migration is complete (its cutoff date has passed), and the rollout status of a security component.
+- A past regional certificate-expiry outage led to auto-renewal being added.
+
+**Working preference:** when I share meeting transcripts or dictation, categorise who said what and confirm attribution with me before updating notes.
+
 ## Guidance for future AI assistance
 
 - Mentor me clearly and practically; explain unfamiliar SRE/service concepts without assuming I already know the internal shorthand.
