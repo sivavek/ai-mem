@@ -5,7 +5,7 @@
 
 ## Memory sync preference
 
-Keep this handoff synchronized with the canonical local project memory and the README in the user's `ai-mem` repository. Sync after meaningful changes to scope, validated service understanding, stakeholder decisions, deliverables, or next steps, and do a weekly reconciliation while the engagement is active. Push only when content has changed. The destination repository is public, so preserve the export boundary: no internal URLs/hostnames, customer or organization identifiers, incident-specific identifiers, credentials, or sensitive operational details. If push access fails, leave the local copy updated and tell Vivek what needs to be fixed.
+Keep this handoff synchronized with the canonical local project memory and the README in the user's `ai-mem` repository. Sync after meaningful changes to scope, validated service understanding, stakeholder decisions, deliverables, or next steps, and do a weekly reconciliation while the engagement is active. A weekly in-thread sync check is scheduled for Friday at 5:00 PM local app time. Push only when content has changed, and merge remote edits rather than overwriting them. The destination repository is public, so preserve the export boundary: no internal URLs/hostnames, customer or organization identifiers, incident-specific identifiers, credentials, or sensitive operational details. If push access fails, leave the local copy updated and tell Vivek what needs to be fixed.
 
 ## Role and goal
 
@@ -46,7 +46,7 @@ Current state:
 ## Work completed and recent learning
 
 - Reviewed service and architecture documentation, deployment/on-call material, and relevant meeting recordings/notes.
-- Created a focused route-failure runbook draft and a local Voltron/DEM service knowledge folder containing service context, known repository/pipeline/environment references, the runbook, and an open-question/owner tracker.
+- Created a focused route-failure runbook draft and a local Voltron/DEM service knowledge folder containing service context, known repository/pipeline/environment references, the runbook, an open-question/owner tracker, and a coverage checklist mapping each requested section to current evidence and gaps. All checklist areas remain partial pending current owner, environment, monitoring, or access confirmation. The team Git destination is still being identified, so the folder remains local staging.
 - Reviewed a separate RBAC overview recording and a separate teammate discussion summary. Keep those sources distinct; the teammate document is an overview of a call, not a recording/transcript of that person.
 - Identified an incident-review lead using dashboard/service search terms. Access guidance and monitoring links from a teammate are still pending.
 - A resource manager asked that SCC/BFG questions be assigned to an owner and discussed in the team's regular stand-ups; until confirmation, mark them unconfirmed.
