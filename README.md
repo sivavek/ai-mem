@@ -3,6 +3,10 @@
 **Purpose:** Portable, sanitized working context for another AI assistant.
 **Last updated:** 2026-11-16
 
+## Memory sync preference
+
+Keep this handoff synchronized with the canonical local project memory and the README in the user's `ai-mem` repository. Sync after meaningful changes to scope, validated service understanding, stakeholder decisions, deliverables, or next steps, and do a weekly reconciliation while the engagement is active. Push only when content has changed. The destination repository is public, so preserve the export boundary: no internal URLs/hostnames, customer or organization identifiers, incident-specific identifiers, credentials, or sensitive operational details. If push access fails, leave the local copy updated and tell Vivek what needs to be fixed.
+
 ## Role and goal
 
 I am an Embedded SRE learning and contributing with a dashboard/service team. My goal is to become useful through reliability work, improve operational readiness, and build enough service understanding to contribute effectively.
