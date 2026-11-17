@@ -112,6 +112,19 @@ Source: the program's embedding execution plan document. It is sanitized here, w
   - Service manager runbook feedback still pending.
   - The intended SCC/BFG/recovery reviewer accepted a meeting just before the stand-up. Goal: get each runbook step marked confirmed / changed / other owner, plus a tabletop date.
 
+## Incident review first pass (synced 2026-11-17, sanitized)
+
+- **Scope:** 10 incidents in the last 12 months tagged to the dashboard/network-experience services. Severity: four significant, six low.
+- **Provisional themes** (from titles only; to be confirmed from retros):
+  - A. Partial UI failure after a change (shell loads, pages fail): 3 incidents. Supports the current runbook.
+  - B. Dependency or auth failure (gateway/DB, monitoring vendor, token): 3 incidents. Candidate for the second runbook.
+  - C. Certificate expiry: 1 incident, widest impact.
+  - D. Data correctness / operational error: 3 incidents, likely owned by the backend team rather than the frontend service. This is an ownership-boundary question.
+- **Next:**
+  - Widen the search terms to check completeness.
+  - Read the 5 available retros for detection source, time to detect/mitigate, fix and recurrence.
+  - Confirm ownership per incident with the service team.
+
 ## Guidance for future AI assistance
 
 - Mentor me clearly and practically; explain unfamiliar SRE/service concepts without assuming I already know the internal shorthand.
