@@ -125,6 +125,19 @@ Source: the program's embedding execution plan document. It is sanitized here, w
   - Read the 5 available retros for detection source, time to detect/mitigate, fix and recurrence.
   - Confirm ownership per incident with the service team.
 
+## Stand-up update (synced 2026-11-17 evening, sanitized)
+
+- **Ownership:** most incidents on my first list belong to a different (backend dashboard) team.
+  - The network-experience incidents belong to this team and already have well-regarded runbooks. My next step is to review those.
+  - The service manager will return an edited list.
+  - A senior engineer will confirm which earlier incidents belong to the frontend service. He still owes me runbook feedback.
+- **Implication:** the team has only about 2–4 incidents in 12 months. The FMEA must be design-based, not only history-based. Forward-looking inputs:
+  - an upcoming multi-account navigation/routing feature
+  - a cross-origin allowlist change for a new embedding surface
+  - a minor org-settings workaround
+- **Deployment freeze until 5 Dec**, so the runbook can only be exercised through a tabletop before my end date.
+- **Possible detection control:** a teammate added end-to-end tests covering all 6 microapps. To confirm: do they run after each deploy or only in CI?
+
 ## Guidance for future AI assistance
 
 - Mentor me clearly and practically; explain unfamiliar SRE/service concepts without assuming I already know the internal shorthand.
