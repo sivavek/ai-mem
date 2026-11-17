@@ -48,6 +48,7 @@ Current state:
 - Reviewed service and architecture documentation, deployment/on-call material, and relevant meeting recordings/notes.
 - Created a focused route-failure runbook draft and a self-contained consolidated Voltron/DEM knowledge document covering the requested architecture, repository/pipeline/environment, deployment/rollback, runbook, monitoring/on-call, contacts, references/incident learning, and open-owner topics. A local service folder also contains supporting source notes, the standalone runbook, a coverage checklist, and an open-question tracker. All checklist areas remain partial pending current owner, environment, monitoring, or access confirmation. The team Git destination is still being identified, so the folder remains local staging.
 - Inspected the deployment-guide screenshots and updated the route-failure runbook with the documented distinction between Release Please and manually triggered split deployments, plus the DashX form's change-ID field. The images do not confirm current approval policy, partial-failure rollback criteria, SCC procedure, or route-level recovery; those remain open.
+- During a runbook discussion, an active tenant issue arose and an experienced engineer used it to demonstrate version rollback and verification. This improved operational understanding but did not constitute a tabletop or validate every runbook step.
 - Reviewed a separate RBAC overview recording and a separate teammate discussion summary. Keep those sources distinct; the teammate document is an overview of a call, not a recording/transcript of that person.
 - Identified an incident-review lead using dashboard/service search terms. Access guidance and monitoring links from a teammate are still pending.
 - A resource manager asked that SCC/BFG questions be assigned to an owner and discussed in the team's regular stand-ups; until confirmation, mark them unconfirmed.
@@ -64,7 +65,7 @@ Current state:
 
 ## Next plan
 
-1. Use the accepted reviewer meeting to mark each runbook step confirmed, changed, or owned by someone else; agree a tabletop date and the SCC/BFG follow-up owner.
+1. Use the engineer's offer to map issue types to runbook actions and support shadowing; share the incident inventory and schedule a tabletop.
 2. At the next Tuesday/Thursday stand-up, align the open owner questions and proposed work with the service manager. Keep unverified runbook steps marked as unconfirmed; do not call the runbook approved, tested, or complete without evidence.
 3. Ask my resource manager for the designated Git repository, then place the complete service knowledge folder there using the team's normal review process.
 4. Align the prior-year incident review with the teammate selected by the service manager and obtain the promised access/walkthrough.
@@ -138,6 +139,14 @@ Source: the program's embedding execution plan document. It is sanitized here, w
   - a minor org-settings workaround
 - **Deployment freeze until 5 Dec**, so the runbook can only be exercised through a tabletop before my end date.
 - **Possible detection control:** a teammate added end-to-end tests covering all 6 microapps. To confirm: do they run after each deploy or only in CI?
+
+## Live walkthrough and incident-inventory update (synced 2026-11-17, sanitized)
+
+- A live tenant issue arose during a runbook discussion, and an experienced engineer walked through the resolution. The approach described was to select a known-good frame version, wait for propagation, verify the affected organization, and remove its override only after verification. Reverting to the last known-good release was described as the preferred rollback approach.
+- Older frames may not support some custom telemetry events, which could fail silently; verify relevant behavior after changing versions. These are reported operational learnings, not a validated general procedure. Approval, exact setting/UI, propagation time, and applicability across product surfaces still require confirmation.
+- The engineer offered to map issue types to runbook actions and support on-call shadowing. Ownership boundaries between the settings site and the dashboard frame service were clarified.
+- The stand-up covered incident-inventory ownership; the service manager corrected the ownership assessment, and a tracking reference was shared. Preserve the updated ownership when continuing the incident review.
+- Follow-up: share the incident inventory, review the team's existing runbooks, continue a design-based FMEA, and arrange shadowing/tabletop work. This walkthrough is not itself a tabletop or full runbook validation.
 
 ## Guidance for future AI assistance
 
