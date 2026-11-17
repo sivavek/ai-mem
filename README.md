@@ -105,7 +105,12 @@ Source: the program's embedding execution plan document. It is sanitized here, w
   - Week of 17 Nov: charter sign-off at stand-up, incident inventory, monitor inventory.
   - Week of 24 Nov: FMEA, alert classification, runbook tabletop. US holiday, so expect slow responses.
   - 1 Dec: wrap-up pack, knowledge-sharing proposal, proposed ownership area.
-- **To confirm:** whether 1 Dec is my actual wrap-up date, the outcome of the 1-month checkpoint, and tool access (incident portal, logging, paging, CI, read-only cloud).
+- **Confirmed 17 Nov:**
+  - End date is 1 Dec; I may ask for an extension to 5 Dec.
+  - The 1-month checkpoint never happened. Progress is tracked in a shared program sheet instead.
+  - Access today: incident portal, CI (Jenkins), read-only cloud. Not yet: logging/search and paging.
+  - Service manager runbook feedback still pending.
+  - The intended SCC/BFG/recovery reviewer accepted a meeting just before the stand-up. Goal: get each runbook step marked confirmed / changed / other owner, plus a tabletop date.
 
 ## Guidance for future AI assistance
 
