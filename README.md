@@ -1,7 +1,7 @@
 # Voltron / DEM Embedded SRE Context
 
 **Purpose:** Portable, sanitized working context for another AI assistant.
-**Last updated:** 2026-11-16
+**Last updated:** 2026-11-17
 
 ## Memory sync preference
 
@@ -88,6 +88,24 @@ Current state:
 - A past regional certificate-expiry outage led to auto-renewal being added.
 
 **Working preference:** when I share meeting transcripts or dictation, categorise who said what and confirm attribution with me before updating notes.
+
+## Execution plan alignment (synced 2026-11-17)
+
+Source: the program's embedding execution plan document. It is sanitized here, with no names or links.
+
+- **Program rules:** do all 6 core activities, plus at least 4 secondary activities agreed with the dev manager. Sign off a one-page charter covering the focus track, top 3 deliverables and explicit out-of-scope items. Program wrap-up is **1 Dec 2026**, where each embedded engineer proposes how they will share knowledge. The 1-month checkpoint was 3 Nov.
+- **My pod's suggested focus:** service architecture, observability, runbooks. The closest program focus track is "Automated Recovery & Runbooks", in a lighter form.
+- **Gaps as of 17 Nov:** no signed charter or activity selection; no on-call participation yet (the team is US-based); FMEA not started; incident review and observability inventory only partial; runbook awaiting validation.
+- **Proposed selection (not yet agreed):** the core 6, plus outage/degradation-mode assessment, runbooks for recurring outage modes, actionable vs non-actionable alert classification, and service/infra ownership boundaries. Proposed out of scope: deploy-from-scratch, backlog fix, top-10 automated remediation.
+- **Proposed top 3 deliverables:**
+  1. Owner-reviewed, tabletop-walked route-failure runbook.
+  2. Scoped FMEA of the shell → microapp delivery path, built from the 12-month incident review.
+  3. Alert/observability inventory with classification and detection gaps.
+- **Timeline:**
+  - Week of 17 Nov: charter sign-off at stand-up, incident inventory, monitor inventory.
+  - Week of 24 Nov: FMEA, alert classification, runbook tabletop. US holiday, so expect slow responses.
+  - 1 Dec: wrap-up pack, knowledge-sharing proposal, proposed ownership area.
+- **To confirm:** whether 1 Dec is my actual wrap-up date, the outcome of the 1-month checkpoint, and tool access (incident portal, logging, paging, CI, read-only cloud).
 
 ## Guidance for future AI assistance
 
