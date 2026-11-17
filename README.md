@@ -47,6 +47,7 @@ Current state:
 
 - Reviewed service and architecture documentation, deployment/on-call material, and relevant meeting recordings/notes.
 - Created a focused route-failure runbook draft and a self-contained consolidated Voltron/DEM knowledge document covering the requested architecture, repository/pipeline/environment, deployment/rollback, runbook, monitoring/on-call, contacts, references/incident learning, and open-owner topics. A local service folder also contains supporting source notes, the standalone runbook, a coverage checklist, and an open-question tracker. All checklist areas remain partial pending current owner, environment, monitoring, or access confirmation. The team Git destination is still being identified, so the folder remains local staging.
+- Inspected the deployment-guide screenshots and updated the route-failure runbook with the documented distinction between Release Please and manually triggered split deployments, plus the DashX form's change-ID field. The images do not confirm current approval policy, partial-failure rollback criteria, SCC procedure, or route-level recovery; those remain open.
 - Reviewed a separate RBAC overview recording and a separate teammate discussion summary. Keep those sources distinct; the teammate document is an overview of a call, not a recording/transcript of that person.
 - Identified an incident-review lead using dashboard/service search terms. Access guidance and monitoring links from a teammate are still pending.
 - A resource manager asked that SCC/BFG questions be assigned to an owner and discussed in the team's regular stand-ups; until confirmation, mark them unconfirmed.
@@ -63,8 +64,8 @@ Current state:
 
 ## Next plan
 
-1. At the next Tuesday/Thursday stand-up, ask the service manager to identify the SCC/BFG owner and confirm the open operational questions with that owner.
-2. Keep unverified runbook steps explicitly marked as unconfirmed; do not call the runbook approved, tested, or complete without evidence.
+1. Use the accepted reviewer meeting to mark each runbook step confirmed, changed, or owned by someone else; agree a tabletop date and the SCC/BFG follow-up owner.
+2. At the next Tuesday/Thursday stand-up, align the open owner questions and proposed work with the service manager. Keep unverified runbook steps marked as unconfirmed; do not call the runbook approved, tested, or complete without evidence.
 3. Ask my resource manager for the designated Git repository, then place the complete service knowledge folder there using the team's normal review process.
 4. Align the prior-year incident review with the teammate selected by the service manager and obtain the promised access/walkthrough.
 5. Continue filling the service inventory with current evidence for architecture, repositories, pipelines, environments, deployment/version/rollback, runbooks, monitoring/on-call, contacts, documentation, incident learning, and open questions/owners.
