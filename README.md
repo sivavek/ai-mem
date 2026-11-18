@@ -1,7 +1,7 @@
 # Voltron / DEM Embedded SRE Context
 
 **Purpose:** Portable, sanitized working context for another AI assistant.
-**Last updated:** 2026-11-17
+**Last updated:** 2026-11-18
 
 ## Memory sync preference
 
@@ -147,6 +147,12 @@ Source: the program's embedding execution plan document. It is sanitized here, w
 - The engineer offered to map issue types to runbook actions and support on-call shadowing. Ownership boundaries between the settings site and the dashboard frame service were clarified.
 - The stand-up covered incident-inventory ownership; the service manager corrected the ownership assessment, and a tracking reference was shared. Preserve the updated ownership when continuing the incident review.
 - Follow-up: share the incident inventory, review the team's existing runbooks, continue a design-based FMEA, and arrange shadowing/tabletop work. This walkthrough is not itself a tabletop or full runbook validation.
+
+## Initial engagement framing (source provided 2026-11-18, sanitized)
+
+- The manager's initial 1:1 invitation framed the embed around onboarding to the Day-0 activities and partnering across two related service teams to improve on-call and runbook hygiene.
+- The manager's stated goals included improving runbooks and alerting, building dashboards from existing observability data, and reducing deployment burden, especially for government deployments. These are broad objectives, not separate assignments unless prioritized.
+- The shared resource bundle covered on-call operations, deployment troubleshooting and validation, settings references, service architecture, alerts, and E2E testing. Some documents were explicitly marked work in progress; the linked Day-0 program document's contents have not been reviewed here.
 
 ## Guidance for future AI assistance
 
