@@ -24,7 +24,7 @@ The broader assignment is to understand the service, inventory and assess runboo
 
 ## Current focused deliverable
 
-The focused runbook for partial dashboard microapp route failures remains an existing draft pending team validation. A newer manager 1:1 identified external-PR validation automation as the near-term toil-reduction priority. Vivek agreed to investigate/prototype checks for required PR checklist items, change-ticket presence/approval, and basic test evidence, using another team's approach as a reference, and to discuss capacity with his resource manager. Implementation depends on a tracking subtask and confirmed capacity. Do not treat the runbook as approved or the automation as started.
+The focused runbook for partial dashboard microapp route failures remains an existing draft pending team validation. A newer manager 1:1 identified external-PR validation automation as the near-term toil-reduction priority. Vivek agreed to investigate/prototype checks for required PR checklist items, change-ticket presence/approval, and basic test evidence, using another team's approach as a reference, and to discuss capacity with his resource manager. Implementation depends on a tracking subtask and confirmed capacity. A read-only review found that the target repository already has a PR template but no dedicated template/ticket-validation workflow on its inspected default branch. The reference team uses separate GitHub Actions workflows for template checks and ticket-link format/presence; a separate PR-comment GitHub App creates and queries change records. Its ticket-link workflow does not establish approval status. Do not treat the runbook as approved or the automation as started.
 
 Current state:
 
@@ -161,6 +161,13 @@ Source: the program's embedding execution plan document. It is sanitized here, w
 - The manager said she would create a tracking subtask with the requirements and supporting runbook/docs. Vivek will discuss capacity with his resource manager before implementation. Dashboard aggregation is useful but was deprioritized for future tracking.
 - Open details: exact checklist fields/evidence, ticket approval verification, informational vs blocking behavior, event/permission constraints, maintenance owner, and rollout/rollback. Review the ticket and referenced docs before coding; use the transcript only if those sources leave policy ambiguous.
 - The manager also reportedly said some transferred services already have maintained runbooks/monitors while Voltron has gaps, and she would identify specific incidents needing runbook work. Keep the existing runbook scope and incident review, but align any expansion to those specific findings.
+
+## PR validation reference review (2026-11-19, sanitized)
+
+- The target repo's existing PR template asks for work-item/change-ticket fields, checklist completion, a testing description with environment selections, author certification, and a screenshot. This provides a starting point for content validation.
+- The reference implementation separates (1) an Actions check for PR title/template/checklist/default text and (2) a release-targeted Actions check that verifies ticket-link presence and allowed URL formats. These checks comment on the PR, add labels, and set a workflow result. The ticket check does not call the ticket systems to establish approval state.
+- A separate Probot/GitHub App responds to PR-comment commands. Its documented commands include dry-run, create, update, revoke, and status validation for change records. The sample PR shows it creating change records; that is distinct from the Actions validation results. App installation needs repository administration approval, and the sample does not prove status lookup is wired into a merge-blocking check.
+- **Implementation direction (proposal):** first adapt deterministic template and ticket-link validation to the target repo's existing PR template. Treat actual approval-state checks as a separate integration requiring an approved source and explicit passing states. Test-evidence presence is not proof tests ran; confirm whether evidence links or existing CI signals are expected. Confirm branch/environment policy, blocking behavior, exceptions/bypass, and ownership before enforcing.
 
 ## Guidance for future AI assistance
 
