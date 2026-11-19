@@ -1,7 +1,7 @@
 # Voltron / DEM Embedded SRE Context
 
 **Purpose:** Portable, sanitized working context for another AI assistant.
-**Last updated:** 2026-11-18
+**Last updated:** 2026-11-19
 
 ## Memory sync preference
 
@@ -24,7 +24,7 @@ The broader assignment is to understand the service, inventory and assess runboo
 
 ## Current focused deliverable
 
-The immediate deliverable is a human-usable draft runbook for partial dashboard microapp route failures: the shell can load while one or more microapp routes or actions fail. The draft uses a past route/RBAC incident as evidence for one failure pattern; do not turn it into a generic playbook or assume all route failures share that cause.
+The focused runbook for partial dashboard microapp route failures remains an existing draft pending team validation. A newer manager 1:1 identified external-PR validation automation as the near-term toil-reduction priority. Vivek agreed to investigate/prototype checks for required PR checklist items, change-ticket presence/approval, and basic test evidence, using another team's approach as a reference, and to discuss capacity with his resource manager. Implementation depends on a tracking subtask and confirmed capacity. Do not treat the runbook as approved or the automation as started.
 
 Current state:
 
@@ -153,6 +153,14 @@ Source: the program's embedding execution plan document. It is sanitized here, w
 - The manager's initial 1:1 invitation framed the embed around onboarding to the Day-0 activities and partnering across two related service teams to improve on-call and runbook hygiene.
 - The manager's stated goals included improving runbooks and alerting, building dashboards from existing observability data, and reducing deployment burden, especially for government deployments. These are broad objectives, not separate assignments unless prioritized.
 - The shared resource bundle covered on-call operations, deployment troubleshooting and validation, settings references, service architecture, alerts, and E2E testing. Some documents were explicitly marked work in progress; the linked Day-0 program document's contents have not been reviewed here.
+
+## Manager 1:1 update (summary supplied 2026-11-19, sanitized)
+
+- **Reported toil:** the weekly on-call engineer manually reviews external PRs as a deployment gatekeeper, checking required checklist items, test evidence, and approved change-ticket presence, with repeated follow-up when contributors omit items.
+- **Near-term priority:** investigate a GitHub PR check/Action that surfaces missing requirements. The proposed first pass checks checklist completion, change-ticket presence/approval, and basic test evidence. Another team's existing validation flow was suggested as a template; exact implementation and policy are not yet verified.
+- The manager said she would create a tracking subtask with the requirements and supporting runbook/docs. Vivek will discuss capacity with his resource manager before implementation. Dashboard aggregation is useful but was deprioritized for future tracking.
+- Open details: exact checklist fields/evidence, ticket approval verification, informational vs blocking behavior, event/permission constraints, maintenance owner, and rollout/rollback. Review the ticket and referenced docs before coding; use the transcript only if those sources leave policy ambiguous.
+- The manager also reportedly said some transferred services already have maintained runbooks/monitors while Voltron has gaps, and she would identify specific incidents needing runbook work. Keep the existing runbook scope and incident review, but align any expansion to those specific findings.
 
 ## Guidance for future AI assistance
 
