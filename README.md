@@ -177,9 +177,9 @@ Source: the program's embedding execution plan document. It is sanitized here, w
 
 ## Incident-process case study (synced 2026-11-20, sanitized)
 
-- Reviewed a recent third-party cloud-region incident as a case study for when to open an incident and how to record its detection source. The CHIM summary card and Jira mirror disagreed on customer impact; the card also showed later severity/resolution-reason changes and duration metrics that may change after retrospective.
-- A duration metric may support a provisional estimate of the first alert time, but the raw alert and detection-source value have not been confirmed. A Webex thread ending with closure updates does not establish the first signal.
-- Keep this process-learning case separate from the partial microapp route-failure FMEA unless the team expands the FMEA boundary. No policy, alerting, or CHIM changes have been made.
+- Reviewed a recent third-party cloud-region incident as a case study for when to open an incident and how to record its detection source. The transcript identifies an internal browser/login synthetic as the signal that notified the team; chat logs record an initial error and first failed sample about 79 minutes before CHIM creation.
+- The CHIM “Declared By Cisco” flag was initially unset/No and then changed to Yes after the team clarified that it should be set when internal monitoring found the issue. The transcript reports frequent omissions and a confusing workflow, but that is not a measured baseline. Validate the opening trigger, flag behavior, and any proposed UI/default fix with the process owner.
+- CHIM and its Jira mirror disagree on customer-impact classification. The delay from first signal to incident creation warrants review but does not by itself prove a policy breach. Keep this process-learning case separate from the partial microapp route-failure FMEA unless the team expands the boundary. No policy, alerting, or CHIM changes have been made.
 
 ## Guidance for future AI assistance
 
