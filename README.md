@@ -175,6 +175,12 @@ Source: the program's embedding execution plan document. It is sanitized here, w
 - The PR-validation work is now recorded as a high-priority subtask under the embedded-service readiness baseline, but remains in triage with no assignee or acceptance criteria in the reviewed snapshot. The parent task calls for one critical government-environment user-journey baseline: confirm scope, review existing E2E/CI and monitoring, assess deployment validation/runbook coverage, conduct a safe walkthrough/tabletop, and document evidence and follow-ups. It explicitly says to reuse existing tests and avoid duplicating work owned elsewhere.
 - The linked on-call guide says the manual PR gate checks an approved reviewer, successful build/quality gate, adequate tests and test screenshots/video, linked change records, and—when targeting government environments—an approved ServiceNow ticket. Treat these as candidate requirements; the subtask must define which ones automation covers and for which branch/environment.
 
+## Incident-process case study (synced 2026-11-20, sanitized)
+
+- Reviewed a recent third-party cloud-region incident as a case study for when to open an incident and how to record its detection source. The CHIM summary card and Jira mirror disagreed on customer impact; the card also showed later severity/resolution-reason changes and duration metrics that may change after retrospective.
+- A duration metric may support a provisional estimate of the first alert time, but the raw alert and detection-source value have not been confirmed. A Webex thread ending with closure updates does not establish the first signal.
+- Keep this process-learning case separate from the partial microapp route-failure FMEA unless the team expands the FMEA boundary. No policy, alerting, or CHIM changes have been made.
+
 ## Guidance for future AI assistance
 
 - Mentor me clearly and practically; explain unfamiliar SRE/service concepts without assuming I already know the internal shorthand.
