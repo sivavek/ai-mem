@@ -28,6 +28,8 @@ The focused runbook for partial dashboard microapp route failures remains an exi
 
 Kartikey also requested a week-by-week record. `WEEKLY_ACTIVITY_LOG.md` contains reconstructed entries for the first three weeks; future entries should capture focus, evidence, decisions, gaps, measured impact, and next steps. The initial dates/details should be corrected if Vivek supplies missing work or more precise dates.
 
+The weekly record now also maps the six core program activities and relevant operational-readiness/automation work to evidence and current status. The focused runbook remains a draft; the formal 12-month incident review and service-specific FMEA are not yet recorded as completed; no formal on-call rotation participation or toil-reduction measurement is recorded. PR validation and a new observability dashboard remain candidate secondary activities pending mutual selection and acceptance criteria.
+
 Current state:
 
 - The local draft has been revised and is awaiting service-team validation.
