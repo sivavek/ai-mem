@@ -187,6 +187,7 @@ Source: the program's embedding execution plan document. It is sanitized here, w
 
 - A qualitative FMEA draft is available for partial dashboard/microapp route failures, using one confirmed pattern and one provisional comparison case. Failure-mode wording and technical mechanism still need service-engineer validation.
 - Risk scales, scoring, treatment priorities/owners, and broader case-set validation are pending. A Jira ticket draft was prepared to complete and review the analysis; no ticket has been created. The current worksheet is a working draft and is not presented as a completed or approved FMEA.
+- Review of the approved retrospective for the anchor route-failure case clarified that impact was configuration-dependent, existing internal checks missed the affected variants, and diagnosis correlated the affected cohort with a recent authorization/routing change. Recovery across separate surfaces and later rollback verification were recorded as distinct milestones. The document also flags incident splitting as added overhead, proposes broader end-to-end coverage/documentation/faster rollback, and contains unresolved metric/timeline definitions. Treat these as case-specific evidence and follow-up questions, not team-wide policy without owner validation.
 
 ## Working cadence (synced from Claude project, 2026-11-24)
 
