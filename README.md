@@ -187,6 +187,12 @@ Source: the program's embedding execution plan document. It is sanitized here, w
 - A qualitative FMEA draft is available for partial dashboard/microapp route failures, using one confirmed pattern and one provisional comparison case. Failure-mode wording and technical mechanism still need service-engineer validation.
 - Risk scales, scoring, treatment priorities/owners, and broader case-set validation are pending. A Jira ticket draft was prepared to complete and review the analysis; no ticket has been created. The current worksheet is a working draft and is not presented as a completed or approved FMEA.
 
+## Working cadence (synced from Claude project, 2026-11-24)
+
+- A weekday morning planning routine (8:40 AM local time) carries unchecked to-dos and pending/blocked items from the previous daily journal note into a new dated note, then gives the top 3 tasks with expected outputs, stand-up asks on Tue/Thu, and days left until the 1 Dec wrap-up.
+- It prioritizes work that moves the three proposed deliverables: the owner-reviewed route-failure runbook, the scoped FMEA built from the incident review, and the alert/observability inventory. It only reads notes and messages Vivek; it does not message others or change tickets, docs, or production.
+- Daily journal notes are Vivek's reusable record of Embed SRE work; keep them updated with to-dos and outcomes.
+
 ## Guidance for future AI assistance
 
 - Mentor me clearly and practically; explain unfamiliar SRE/service concepts without assuming I already know the internal shorthand.
