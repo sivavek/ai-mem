@@ -1,7 +1,7 @@
 # Voltron / DEM Embedded SRE Context
 
 **Purpose:** Portable, sanitized working context for another AI assistant.
-**Last updated:** 2026-11-20
+**Last updated:** 2026-11-24
 
 ## Memory sync preference
 
@@ -28,7 +28,7 @@ The focused runbook for partial dashboard microapp route failures remains an exi
 
 Kartikey also requested a week-by-week record. `WEEKLY_ACTIVITY_LOG.md` begins on the kickoff plan's Day One, October 5, and combines the kickoff assignment, dated manager emails, the team's weekly progress report, and a supplied chat export. It records October service updates from the team's report with inferred calendar-week mappings clearly marked; Oct 12–16 remains a historical activity gap. Calendar invitations are not treated as proof of attendance, and chat messages without timestamps are flagged for confirmation. Future entries capture focus, evidence, decisions, gaps, measured impact, and next steps. Remaining gaps should be filled from Vivek's records rather than inferred.
 
-The weekly record maps the six core program activities and relevant operational-readiness/automation work to evidence and current status. It now has one source-linked weekly progress table with a Sam comment/validation field for every week, alongside the cross-week activity coverage matrix; repeated detailed week narratives were removed. Pending validation is not approval. The supplied DM and team progress report show runbook assessment and rollback-path work during the earlier weeks; DM messages have no timestamps, so some dates remain for confirmation. The reviewed manager emails add onboarding goals, meeting/stand-up invitations, a runbook update, a service-architecture discussion, and a positive but non-approving response. The focused runbook remains a draft; the formal 12-month incident review and service-specific FMEA are not yet recorded as completed; no formal on-call rotation participation or toil-reduction measurement is recorded. PR validation and a new observability dashboard remain candidate secondary activities pending mutual selection and acceptance criteria.
+The weekly record maps the six core program activities and relevant operational-readiness/automation work to evidence and current status. It now has one source-linked weekly progress table with a Sam comment/validation field for every week, alongside the cross-week activity coverage matrix; repeated detailed week narratives were removed. Pending validation is not approval. The supplied DM and team progress report show runbook assessment and rollback-path work during the earlier weeks; DM messages have no timestamps, so some dates remain for confirmation. The reviewed manager emails add onboarding goals, meeting/stand-up invitations, a runbook update, a service-architecture discussion, and a positive but non-approving response. The focused runbook remains a draft; a qualitative FMEA for partial shell-to-microapp route failures is now drafted but is not complete or owner-reviewed. The formal 12-month incident review is not yet validated; no formal on-call rotation participation or toil-reduction measurement is recorded. PR validation and a new observability dashboard remain candidate secondary activities pending mutual selection and acceptance criteria.
 
 Current state:
 
@@ -175,11 +175,17 @@ Source: the program's embedding execution plan document. It is sanitized here, w
 - The PR-validation work is now recorded as a high-priority subtask under the embedded-service readiness baseline, but remains in triage with no assignee or acceptance criteria in the reviewed snapshot. The parent task calls for one critical government-environment user-journey baseline: confirm scope, review existing E2E/CI and monitoring, assess deployment validation/runbook coverage, conduct a safe walkthrough/tabletop, and document evidence and follow-ups. It explicitly says to reuse existing tests and avoid duplicating work owned elsewhere.
 - The linked on-call guide says the manual PR gate checks an approved reviewer, successful build/quality gate, adequate tests and test screenshots/video, linked change records, and—when targeting government environments—an approved ServiceNow ticket. Treat these as candidate requirements; the subtask must define which ones automation covers and for which branch/environment.
 
-## Incident-process case study (synced 2026-11-20, sanitized)
+## Incident-process case study (updated 2026-11-24, sanitized)
 
-- Reviewed a recent third-party cloud-region incident as a case study for when to open an incident and how to record its detection source. The transcript identifies an internal browser/login synthetic as the signal that notified the team; chat logs record an initial error and first failed sample about 79 minutes before CHIM creation.
-- The CHIM “Declared By Cisco” flag was initially unset/No and then changed to Yes after the team clarified that it should be set when internal monitoring found the issue. The transcript reports frequent omissions and a confusing workflow, but that is not a measured baseline. Validate the opening trigger, flag behavior, and any proposed UI/default fix with the process owner.
-- CHIM and its Jira mirror disagree on customer-impact classification. The delay from first signal to incident creation warrants review but does not by itself prove a policy breach. Keep this process-learning case separate from the partial microapp route-failure FMEA unless the team expands the boundary. No policy, alerting, or CHIM changes have been made.
+- A resolved third-party cloud-region incident was reviewed as a learning case for incident declaration and internal-detection recording. The available case record identifies an internal browser/login synthetic as the detection source; the incident was formally created later. The time gap is a question for process review, not proof of a policy breach.
+- The internal-discovery field was corrected after its meaning was discussed. This confirms how the case was classified, but the service-wide incident-opening trigger and current field guidance still need confirmation from the process owner. Reported confusion or missed fields have not been measured as a baseline.
+- The case review identified inconsistent impact classification between the incident system and its Jira mirror. A concise ticket draft was prepared to capture the investigation and seek owner-confirmed guidance; a separate case-based runbook draft describes evidence capture, status updates, and recovery verification. These drafts do not reopen or repeat the resolved incident response, and no Jira issue, policy, alerting, or incident-form change has been made.
+- The case-study portion of the manager's ask is addressed: the detection source has been identified and the process gap has been documented. The work is not complete as team guidance until the opening trigger and field semantics are validated and the resulting decision aid is recorded in the agreed location.
+
+## FMEA progress (updated 2026-11-24, sanitized)
+
+- A qualitative FMEA draft is available for partial dashboard/microapp route failures, using one confirmed pattern and one provisional comparison case. Failure-mode wording and technical mechanism still need service-engineer validation.
+- Risk scales, scoring, treatment priorities/owners, and broader case-set validation are pending. A Jira ticket draft was prepared to complete and review the analysis; no ticket has been created. The current worksheet is a working draft and is not presented as a completed or approved FMEA.
 
 ## Guidance for future AI assistance
 
