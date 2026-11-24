@@ -189,6 +189,14 @@ Source: the program's embedding execution plan document. It is sanitized here, w
 - Risk scales, scoring, treatment priorities/owners, and broader case-set validation are pending. A Jira ticket draft was prepared to complete and review the analysis; no ticket has been created. The current worksheet is a working draft and is not presented as a completed or approved FMEA.
 - Review of the approved retrospective for the anchor route-failure case clarified that impact was configuration-dependent, existing internal checks missed the affected variants, and diagnosis correlated the affected cohort with a recent authorization/routing change. Recovery across separate surfaces and later rollback verification were recorded as distinct milestones. The document also flags incident splitting as added overhead, proposes broader end-to-end coverage/documentation/faster rollback, and contains unresolved metric/timeline definitions. Treat these as case-specific evidence and follow-up questions, not team-wide policy without owner validation.
 
+## Published documentation and issue-link audit (2026-11-24, sanitized)
+
+- Vivek supplied links to the service knowledge base, route-failure FMEA and runbook, incident runbook, and team/program weekly reports, plus their tracking issues. The current source records were checked; public memory intentionally omits internal URLs and issue/incident identifiers.
+- The route-failure FMEA is a working draft with one unscored failure mode, unresolved evidence/reviewer questions, and a very wide worksheet that needs a more readable layout and linked evidence.
+- The incident runbook exists in Confluence, but its published version needs synchronization with the newer local responder lifecycle and triage decision tree. Declaration, escalation, update cadence, and recovery criteria still need owner confirmation.
+- The service KB and weekly reports contain older inventory/FMEA status. Refresh them against dated evidence; keep user-reported grouping separate from service-owner validation.
+- Jira tracking links were checked. Some child issues still need links to their published documentation and clearer remaining acceptance/validation work. One inventory issue contains a recording access credential; it should be removed from the issue and its validity checked with the recording owner. No external pages or issues were edited during the audit.
+
 ## Working cadence (synced from Claude project, 2026-11-24)
 
 - A weekday morning planning routine (8:40 AM local time) carries unchecked to-dos and pending/blocked items from the previous daily journal note into a new dated note, then gives the top 3 tasks with expected outputs, stand-up asks on Tue/Thu, and days left until the 1 Dec wrap-up.
