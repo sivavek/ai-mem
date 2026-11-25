@@ -211,13 +211,6 @@ Source: the program's embedding execution plan document. It is sanitized here, w
 - It prioritizes work that moves the three proposed deliverables: the owner-reviewed route-failure runbook, the scoped FMEA built from the incident review, and the alert/observability inventory. It only reads notes and messages Vivek; it does not message others or change tickets, docs, or production.
 - Daily journal notes are Vivek's reusable record of Embed SRE work; keep them updated with to-dos and outcomes.
 
-## Status check (synced from Claude project, 2026-11-25, sanitized)
-
-- Remaining window: 25, 26, 27, 30 Nov and 1 Dec. The US holiday on 26–27 Nov means owner/manager asks must go out on 25 Nov (local evening) to be seen before the break; the 1 Dec end date and any extension to 5 Dec are not confirmed in memory.
-- The restructured outage runbook text is still not in shared memory or the local project folder; only its outline is recorded. A content gap review is pending until the text is supplied.
-- Open from the 24 Nov audit: the recording credential in the inventory issue has not been recorded as removed; the published incident runbook still lags the local version; the FMEA remains unscored; the alert/observability inventory has no recorded first pass.
-- The local daily journal notes stop at 20 Nov, so the morning routine's notes for 23–24 Nov are not in the project folder.
-
 ## Guidance for future AI assistance
 
 - Mentor me clearly and practically; explain unfamiliar SRE/service concepts without assuming I already know the internal shorthand.
