@@ -195,7 +195,15 @@ Source: the program's embedding execution plan document. It is sanitized here, w
 - The route-failure FMEA is a working draft with one unscored failure mode, unresolved evidence/reviewer questions, and a very wide worksheet that needs a more readable layout and linked evidence.
 - The incident runbook exists in Confluence, but its published version needs synchronization with the newer local responder lifecycle and triage decision tree. Declaration, escalation, update cadence, and recovery criteria still need owner confirmation.
 - The service KB and weekly reports contain older inventory/FMEA status. Refresh them against dated evidence; keep user-reported grouping separate from service-owner validation.
-- Jira tracking links were checked. Some child issues still need links to their published documentation and clearer remaining acceptance/validation work. One inventory issue contains a recording access credential; it should be removed from the issue and its validity checked with the recording owner. No external pages or issues were edited during the audit.
+- Jira tracking links were checked. Some child issues still need links to their published documentation and clearer remaining acceptance/validation work. No external pages or issues were edited during the audit.
+
+## Status check (synced 2026-11-25, sanitized)
+
+- The current engagement context lists Dec 1 as the end date; a possible extension to Dec 5 is not confirmed. A US holiday on Nov 26–27 may slow owner responses, so open validation questions should be raised early.
+- The structured incident-response runbook is now present in the local project files. Its published copy still needs synchronization; declaration, escalation, update cadence, and recovery criteria require owner confirmation.
+- The partial route-failure FMEA is published as a working draft. Its worksheet remains wide, evidence links need improvement, and scoring and service-owner review are still open.
+- The 12-month incident inventory is reported complete and broadly grouped, but source coverage and owner validation remain undocumented. The updated weekly activity log records work through Nov 24; separate daily journal notes after Nov 20 were not checked.
+- PR-template fields were updated in a draft change, but app installation/access and the dry run remain unconfirmed. No merge enforcement or approval-state validation is claimed.
 
 ## Working cadence (synced from Claude project, 2026-11-24)
 
