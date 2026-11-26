@@ -23,6 +23,7 @@ Running tallies: SEPA 1 trade, 1 loss (gate closed). NK blast 1 trade, 1 win (ju
 ## Open / pending (as of 26 Nov 2026)
 
 - AUROPHARMA (SEPA): buy GTT (₹1,862, 29 sh) cancelled 26 Nov because the market gate was closed. Re-place at ₹1,862, stop ₹1,778, once the gate opens.
+- Swing checks 26 Nov 2026 (stock-check, 1-month swing, not held, all graded on 24 Dec): LAURUSLABS Buy, score +4, uptrend, RS 99, closed 2,505 above the 2,488 pivot on 1.45x volume; SEPA plan only once the gate opens: entry by 2,612 at most (5% over pivot), stop 2,371, targets 2,630 and 2,755, half size (2 ambers: advance >100%, base <4 weeks) = 9 sh. TCS Watch, +2, mixed trend (50d 2,310 < 200d 2,373), not Template. DMART Avoid, +1, downtrend (close 3,533 < 200d 3,931), RS 32. Gate closed on 26 Nov: Nifty 500 200d still falling (22,803 vs 22,837 a month earlier), breadth 52%.
 - SBIFUNDS: sell limit ₹515 placed 13 Nov (status to confirm).
 
 ## Lessons so far
