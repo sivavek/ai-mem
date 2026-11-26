@@ -1,12 +1,13 @@
 # Finance — Trading and Investing Context
 
 **Purpose:** Portable working context for AI assistance on Vivek's trading and investing (Claude project "Finance"). Kept separate from work/SRE context (repo root) and other projects (`business/`).
-**Last updated:** 2026-11-25
+**Last updated:** 2026-11-26
 **Repo is public:** no account ids, credentials or contract notes here. Trade P&L is included with Vivek's OK (25 Nov 2026).
 
 ## Files
 
 - `trades.md` — live trade log summary and open positions/plans, by strategy.
+- `research.md` — indicator and strategy research findings (what was tested, what failed).
 - Full journal (source of truth): Obsidian vault `sivavek/Trading Journal.md`; stock-check verdicts in `03 Resources/Trading Brain/Wiki/journal/stock-calls.md`.
 - Research code and backtests: repo `sivavek/backtest-cci` (its `CLAUDE.md` is the full record).
 
