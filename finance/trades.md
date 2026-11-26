@@ -22,7 +22,7 @@ Running tallies: SEPA 1 trade, 1 loss (gate closed). NK blast 1 trade, 1 win (ju
 
 ## Open / pending (as of 26 Nov 2026)
 
-- AUROPHARMA (SEPA): buy GTT trigger ₹1,862 (limit ₹1,862), 29 sh, still active 26 Nov (LTP ~₹1,830); stop ₹1,776 to add after the fill. Fails hard check 1 (market gate closed); Vivek decided 26 Nov to cancel it. Re-place at ₹1,862, stop ₹1,778, once the gate opens.
+- AUROPHARMA (SEPA): buy GTT (₹1,862, 29 sh) cancelled 26 Nov because the market gate was closed. Re-place at ₹1,862, stop ₹1,778, once the gate opens.
 - SBIFUNDS: sell limit ₹515 placed 13 Nov (status to confirm).
 
 ## Lessons so far
