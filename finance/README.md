@@ -9,6 +9,7 @@
 - `trades.md` — live trade log summary and open positions/plans, by strategy.
 - `sepa-learnings.md` — SEPA / VCP live tally and entry checks learned from live trades.
 - `research.md` — indicator and strategy research findings (what was tested, what failed).
+- `stock-models.md` — fundamental company models and valuation calls (ITC from 27 Nov 2026).
 - Full journal (source of truth): Obsidian vault `sivavek/Trading Journal.md`; stock-check verdicts in `03 Resources/Trading Brain/Wiki/journal/stock-calls.md`.
 - Research code and backtests: repo `sivavek/backtest-cci` (its `CLAUDE.md` is the full record).
 
